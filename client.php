@@ -20,7 +20,7 @@
 
         // Mensaje que despliega el nombre de usuario consultado en caso de que exista.
         echo "\t\r\n";
-        echo "Peticion enviada, $user ";
+        echo ">>>>> Peticion enviada: $user ";
         echo "\t\r\n";
 
         //Creacion de socket con caracteristicas TCP
@@ -47,7 +47,7 @@
                // Se recibe la información
                $info = socket_read($socket, 1024);
                // Se imprime la información recibida
-               echo "Respuesta recibida, $info";
+               echo "<<<<< Respuesta recibida: $info";
             }
         }
     }

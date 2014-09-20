@@ -13,7 +13,7 @@
     //IP Adresss
     $ip = '127.0.0.1';
     //Puerto
-    $puerto = '10001';
+    $puerto = '10001';-
      
     /* Creación del socket
     AF_INET Especifca el protocolo de la conexion (AF_INET - AF_INET6 - AF_UNIX)
@@ -42,9 +42,9 @@
         $peticion = preg_replace("[ \t\r\n]", "", $input);
         $inf = $contenido[$peticion];
         echo "\t\r\n";
-        echo "Peticion recibida de parte del cliente: $peticion";
+        echo "<<<<< Peticion recibida: $peticion";
         echo "\t\r\n";
-        echo "Respuesta enviada al cliente: $inf";
+        echo ">>>>> Respuesta enviada: $inf";
         echo "\t\r\n";
         
         if(array_key_exists($peticion, $contenido)){
